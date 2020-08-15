@@ -31,3 +31,26 @@ This is an OpenCore version of ASUS Z170i Pro Gaming Hackintosh EFI. It works pe
 | Fast Boot | Disabled |
 | OS Type | Other OS |
 | Launch CSM | Disabled |
+
+## Edit config.plist 
+
+Generate your own values and use the NIC MAC on the ROM field.
+
+```xml 
+		<dict>
+			<key>AdviseWindows</key>
+			<false/>
+			<key>MLB</key>
+			<string>MLB</string>
+			<key>ROM</key>
+			<data>ROM</data>
+			<key>SpoofVendor</key>
+			<true/>
+			<key>SystemProductName</key>
+			<string>iMac17,1</string>
+			<key>SystemSerialNumber</key>
+			<string>SN</string>
+			<key>SystemUUID</key>
+			<string>UUID</string>
+		</dict>
+```
