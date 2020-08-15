@@ -7,7 +7,7 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
 | Item | Brand | Model | Driver | Comment |
 |-----|-----|-----|-----|-----|
 | Motherboard | ASUS | Z170 Maximus VIII Hero | | |
-| CPU | Intel | i7-6700K  | | | oc to 4.6GHz 1.33v |
+| CPU | Intel | i7-6700K | | oc to 4.6GHz 1.33v |
 | RAM | HyperX | Fury Black 4x8GB DDR4 2133MHz | | oc to 2800 1.35v |
 | iGPU | Intel | HD Graphics 530 | built-in | Headless mode |
 | dGPU | ASUS | RX 5700XT TUF |  |  |
