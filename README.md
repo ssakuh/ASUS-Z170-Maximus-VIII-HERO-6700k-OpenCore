@@ -1,6 +1,7 @@
 # ASUS-Z170-Maximus-VIII-HERO-6700k-OpenCore
 
-This is an OpenCore version of ASUS Z170i Pro Gaming Hackintosh EFI. It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
+OpenCore 0.6.0 EFI directory for my build. 
+It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
 ## Hardware
 | Item | Brand | Model | Driver | Comment |
