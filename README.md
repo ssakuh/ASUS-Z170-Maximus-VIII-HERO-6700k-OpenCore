@@ -9,7 +9,7 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
 |-----|-----|-----|-----|-----|
 | Motherboard | ASUS | Z170 Maximus VIII Hero | | |
 | CPU | Intel | i7-6700K | | oc to 4.6GHz 1.33v |
-| RAM | HyperX | Fury Black 4x8GB DDR4 2133MHz | | oc to 2800 1.35v |
+| RAM | HyperX | Fury Black 4x8GB DDR4 | | oc to 2800 MHz 1.35v |
 | iGPU | Intel | HD Graphics 530 | built-in | Headless mode |
 | dGPU | ASUS | RX 5700XT TUF |  |  |
 | SSD | Samsung | 970 EVO 250GB NVMe | [NVMeFix](https://github.com/acidanthera/NVMeFix) | |
