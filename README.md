@@ -1,10 +1,11 @@
 # ASUS-Z170-Maximus-VIII-HERO-6700k-OpenCore
 
 OpenCore 0.6.0 EFI directory for my build. 
+
 It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
-## Hardware
-| Item | Brand | Model | Driver | Comment |
+### Hardware
+| Item | Brand | Model | Kext | Comment |
 |-----|-----|-----|-----|-----|
 | Motherboard | ASUS | Z170 Maximus VIII Hero | | |
 | CPU | Intel | i7-6700K | | oc to 4.6GHz 1.33v |
@@ -15,8 +16,11 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
 | Ethernet | Intel | I219-V | [IntelMausi](https://github.com/acidanthera/IntelMausi) | |
 | Audio | Realtek | ALC1150 | [AppleALC](https://github.com/acidanthera/AppleALC) | |
 
+## How to
 
-## BIOS Setup
+Follow this guide: https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/troubleshooting.html
+
+### BIOS Setup
 | Name | Option |
 | --- | --- |
 | SW Guard Extensions (SGX) | Disabled |
@@ -33,7 +37,11 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
 | OS Type | Other OS |
 | Launch CSM | Disabled |
 
-## Edit config.plist 
+### Generate ACPI
+
+Generate your own SSDT-EC.aml and SSDT-PLUG.aml, as mine used the overclocking settings.
+
+### Edit config.plist 
 
 Generate your own values and use the NIC MAC on the ROM field.
 
