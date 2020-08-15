@@ -6,8 +6,8 @@ This is an OpenCore version of ASUS Z170i Pro Gaming Hackintosh EFI. It works pe
 | Item | Brand | Model | Driver | Comment |
 |-----|-----|-----|-----|-----|
 | Motherboard | ASUS | Z170 Maximus VIII Hero | | |
-| CPU | Intel | i7-6700K  | | | oc to 4.6GHz |
-| RAM | G.SKILL | TridentZ 2x16GB DDR4 3000 | | oc to 2800 |
+| CPU | Intel | i7-6700K  | | | oc to 4.6GHz 1.33v |
+| RAM | HyperX | Fury Black 4x8GB DDR4 2133MHz | | oc to 2800 1.35v |
 | iGPU | Intel | HD Graphics 530 | built-in | Headless mode |
 | dGPU | ASUS | RX 5700XT TUF |  |  |
 | SSD | Samsung | 970 EVO 250GB NVMe | [NVMeFix](https://github.com/acidanthera/NVMeFix) | |
