@@ -12,11 +12,11 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
 ### Hardware
 | Item | Brand | Model | Kext | Comment |
 |-----|-----|-----|-----|-----|
-| Motherboard | ASUS | Z170 Maximus VIII Hero | | |
+| Motherboard | ASUS | Z170 Maximus VIII Hero | USBMap.kext | |
 | CPU | Intel | i7-6700K | | oc to 4.6GHz 1.33v |
-| RAM | HyperX | Fury Black 4x8GB DDR4 | | oc to 2800 MHz 1.35v |
-| iGPU | Intel | HD Graphics 530 | built-in | Headless mode |
-| dGPU | ASUS | RX 5700XT TUF |  |  |
+| RAM | HyperX | Fury Black 4x8GB DDR4 | XMP | oc to 2800 MHz 1.35v |
+| iGPU | Intel | HD Graphics 530 | [WEG](https://github.com/acidanthera/WhateverGreen) | Headless mode |
+| dGPU | ASUS | RX 5700XT TUF | [WEG](https://github.com/acidanthera/WhateverGreen) |  |
 | SSD | Samsung | 970 EVO 250GB NVMe | [NVMeFix](https://github.com/acidanthera/NVMeFix) | |
 | Ethernet | Intel | I219-V | [IntelMausi](https://github.com/acidanthera/IntelMausi) | |
 | Audio | Realtek | ALC1150 | [AppleALC](https://github.com/acidanthera/AppleALC) | |
