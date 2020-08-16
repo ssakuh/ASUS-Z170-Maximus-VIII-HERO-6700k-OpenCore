@@ -5,8 +5,9 @@ OpenCore 0.6.0 EFI directory for my build.
 It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
 ### Known issues
- - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A
+ - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A -> for me they were dead in Windows/Linux anyway for some reason, maybe faulty board
  - Thunderbolt 3 not available
+ - HD 530 DP is broken, needs port fix, need help with it
  - you tell me 
 
 ### Hardware
