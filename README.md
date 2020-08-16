@@ -1,6 +1,6 @@
 # ASUS-Z170-Maximus-VIII-HERO-6700k-OpenCore
 
-OpenCore 0.6.0 EFI directory for my build. 
+[OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.6.0 EFI directory for my build. 
 
 It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
@@ -42,7 +42,7 @@ Generate your own ```SSDT-EC.aml``` and ```SSDT-PLUG.aml``` using [this](https:/
 
 ### Edit config.plist 
 
-Generate your own values using [this](https://github.com/corpnewt/GenSMBIOS) and use the NIC MAC on the ROM field, and update the file ```./EFI/OC/config.plist```.
+Generate your own SMBIOS values using [this](https://github.com/corpnewt/GenSMBIOS) tool and use your network card's MAC address (without dashes) on the ROM field, and update the file ```./EFI/OC/config.plist```.
 
 ```xml 
 		<dict>
@@ -68,3 +68,7 @@ Generate your own values using [this](https://github.com/corpnewt/GenSMBIOS) and
 Mount EFI using [this](https://github.com/corpnewt/MountEFI) and copy over the entire EFI folder from the USB to the root of the EFI partition on the drive you installed macOS on.
 
 (optional) - run ```osx.sh``` from [here](https://raw.githubusercontent.com/hecz0r/config/master/osx.sh) to get my dotfiles and some software I use.
+
+### Troubleshooting
+
+If any part of the boot process hangs or throws errors, enable debugging in config.plist and replace the provided files with ones from OpenCore Debug version, and respectively, the Kext you suspect is faulty in Debug version. The files provided by me are Release versions.
