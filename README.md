@@ -1,4 +1,4 @@
-# ASUS-Z170-Maximus-VIII-HERO-6700k-OpenCore
+# ASUS Z170 Maximus VIII HERO / i7 6700k OpenCore
 
 [OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.6.0 EFI directory for my build. 
 
