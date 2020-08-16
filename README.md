@@ -4,14 +4,20 @@ OpenCore 0.6.0 EFI directory for my build.
 
 It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
+### Known issues
+ - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A -> for me they were dead in Windows/Linux anyway for some reason, maybe faulty board
+ - Thunderbolt 3 not available
+ - HD 530 DP is broken, needs port fix, need help with it
+ - you tell me 
+
 ### Hardware
 | Item | Brand | Model | Kext | Comment |
 |-----|-----|-----|-----|-----|
-| Motherboard | ASUS | Z170 Maximus VIII Hero | | |
+| Motherboard | ASUS | Z170 Maximus VIII Hero | USBMap.kext | |
 | CPU | Intel | i7-6700K | | oc to 4.6GHz 1.33v |
-| RAM | HyperX | Fury Black 4x8GB DDR4 | | oc to 2800 MHz 1.35v |
-| iGPU | Intel | HD Graphics 530 | built-in | Headless mode |
-| dGPU | ASUS | RX 5700XT TUF |  |  |
+| RAM | HyperX | Fury Black 4x8GB DDR4 | XMP | oc to 2800 MHz 1.35v |
+| iGPU | Intel | HD Graphics 530 | [WEG](https://github.com/acidanthera/WhateverGreen) | Headless mode |
+| dGPU | ASUS | RX 5700XT TUF | [WEG](https://github.com/acidanthera/WhateverGreen) |  |
 | SSD | Samsung | 970 EVO 250GB NVMe | [NVMeFix](https://github.com/acidanthera/NVMeFix) | |
 | Ethernet | Intel | I219-V | [IntelMausi](https://github.com/acidanthera/IntelMausi) | |
 | Audio | Realtek | ALC1150 | [AppleALC](https://github.com/acidanthera/AppleALC) | |
