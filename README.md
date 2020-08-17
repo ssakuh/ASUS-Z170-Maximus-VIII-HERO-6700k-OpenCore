@@ -8,6 +8,7 @@ It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothl
  - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A -> for me they were dead in Windows/Linux anyway for some reason, maybe faulty board
  - Thunderbolt 3 not available
  - HD 530 DP is broken, needs port fix, need help with it
+ - Sleep, need help with it
  - you tell me 
 
 ### Hardware
