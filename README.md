@@ -1,14 +1,13 @@
 # ASUS Z170 Maximus VIII HERO / i7 6700k OpenCore
 
-[OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.6.0 EFI directory for my build. 
+[OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.8.5 EFI directory for my build. 
 
-It works perfectly on macOS Catalina (10.15.6). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
+It works perfectly on macOS Ventura (13.0). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
 ### Known issues
  - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A -> for me they were dead in Windows/Linux anyway for some reason, maybe faulty board
  - Thunderbolt 3 not available
  - HD 530 DP is broken, needs port fix, need help with it
- - Sleep, need help with it
  - you tell me 
 
 ### Hardware
@@ -31,9 +30,9 @@ Below are my notes for this specific hardware config:
 
 ### UEFI Setup
 
-Load files from "UEFI settings" folder on a USB drive and load them from Tools -> OC Profile.
+Load files from "UEFI settings" folder on a USB drive and load them from Tools -> OC Profile. If you are applying after a CMOS reset, you should first disable CSM, reboot
 
-! They have my overclocking settings, please check the CPU / RAM settings before applying on your machine.
+**Warning**: They have my overclocking settings, please check the CPU / RAM settings before applying on your machine.
 
 As the installer reboots several times, set the USB drive with macOS installer as the 1st boot option.
 
@@ -64,7 +63,7 @@ Generate your own SMBIOS values using [this](https://github.com/corpnewt/GenSMBI
 		</dict>
 ```
 
-### Postinstall
+### Post install
 
 Mount EFI using [this](https://github.com/corpnewt/MountEFI) and copy over the entire EFI folder from the USB to the root of the EFI partition on the drive you installed macOS on.
 
