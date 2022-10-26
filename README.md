@@ -45,22 +45,28 @@ Generate your own ```SSDT-EC.aml``` and ```SSDT-PLUG.aml``` using [this](https:/
 Generate your own SMBIOS values using [this](https://github.com/corpnewt/GenSMBIOS) tool and use your network card's MAC address (without dashes) on the ROM field, and update the file ```./EFI/OC/config.plist```.
 
 ```xml 
-		<dict>
-			<key>AdviseWindows</key>
-			<false/>
-			<key>MLB</key>
-			<string>MLB</string>
-			<key>ROM</key>
-			<data>ROM</data>
-			<key>SpoofVendor</key>
-			<true/>
-			<key>SystemProductName</key>
-			<string>iMac17,1</string>
-			<key>SystemSerialNumber</key>
-			<string>SN</string>
-			<key>SystemUUID</key>
-			<string>UUID</string>
-		</dict>
+<dict>
+    <key>AdviseFeatures</key>
+    <false/>
+    <key>MLB</key>
+    <string>${MLB}</string>
+    <key>MaxBIOSVersion</key>
+    <false/>
+    <key>ProcessorType</key>
+    <integer>0</integer>
+    <key>ROM</key>
+    <data>${ROM}</data>
+    <key>SpoofVendor</key>
+    <true/>
+    <key>SystemMemoryStatus</key>
+    <string>Auto</string>
+    <key>SystemProductName</key>
+    <string>MacPro7,1</string>
+    <key>SystemSerialNumber</key>
+    <string>${SYSTEM_SERIAL_NUMBER}</string>
+    <key>SystemUUID</key>
+    <string>${SYSTEM_UUID}</string>
+</dict>
 ```
 
 ### Post install
