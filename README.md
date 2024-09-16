@@ -1,11 +1,11 @@
 # ASUS Z170 Maximus VIII HERO / i7 6700k OpenCore
 
-[OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 0.8.5 EFI directory for my build. 
+[OpenCore](https://github.com/acidanthera/OpenCorePkg/releases) 1.0.1 EFI directory for my build. 
 
-It works perfectly on macOS Ventura (13.0). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
+It works perfectly on macOS Sequoia (15.0). FCPX GPU rendering works smoothly. HDR can be enabled. Sleep, Airdrop and Handoff are supported.
 
 ### Known issues
- - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A -> for me they were dead in Windows/Linux anyway for some reason, maybe faulty board
+ - ASMedia USB3.1 (both Type A and C) do not carry data, but they charge with 1,4A,  maybe faulty board
  - Thunderbolt 3 not available
  - HD 530 DP is broken, needs port fix, need help with it
  - you tell me 
@@ -73,8 +73,6 @@ Generate your own SMBIOS values using [this](https://github.com/corpnewt/GenSMBI
 
 Mount EFI using [this](https://github.com/corpnewt/MountEFI) and copy over the entire EFI folder from the USB to the root of the EFI partition on the drive you installed macOS on.
 
-(optional) - run ```osx.sh``` from [here](https://raw.githubusercontent.com/hecz0r/config/master/osx.sh) to get my dotfiles and some software I use.
-
 ### Troubleshooting
 
-If any part of the boot process hangs or throws errors, enable debugging in config.plist and replace the provided files with ones from OpenCore Debug version, and respectively, the Kext you suspect is faulty in Debug version. The files provided by me are Release versions.
+If any part of the boot process hangs or throws errors, enable debugging in config.plist and replace the provided files with ones from OpenCore Debug version, and respectively, the Kext you suspect is faulty in Debug version. The files provided in this repository are Release builds.
